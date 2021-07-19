@@ -452,6 +452,19 @@ p{
 
 /* MEDIA QUERIES */
 
+
+
+@media screen and (min-width:1600px) {
+    .populaire .detailsPopulaire{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+          
+    } 
+}
+
+
 @media screen and (max-width:1350px) {
     .Hebergement{
         display: grid;
