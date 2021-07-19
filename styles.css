@@ -1,0 +1,763 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+  
+/* HEADER */
+
+header{
+    padding: 10px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 10% 10% 20%;
+    grid-template-rows: 1px 80px;
+    font-size: 15px;
+    
+     
+    
+}
+    .soulignementHebergement{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        border: 2px solid #0065fc;
+    }
+    .Reservia{
+        padding-top: 40px;
+}
+    .Nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        grid-column: 4/6;
+        
+
+        }
+        .Nav a , .inscription a {
+
+            text-decoration: none;
+            color: #0065fc;
+        }
+
+        
+        .activite a{
+            color: black;
+        }
+        .activite a:hover{
+            color: #0065fc;
+        }
+
+
+    .inscription{
+        grid-column: 6/7;
+        grid-row: 2/3;
+       display: flex;
+       align-items: center;
+              
+}
+
+/* NAV */
+
+.Recherche{
+    padding: 10px;
+    width: auto;
+    height: 280px;
+    display: grid;
+    grid-template-columns: repeat(10 ,1fr);
+    grid-template-rows: 40px 40px 35px 80px 80px repeat(4,40px);
+}
+
+p{
+    font-size: 14px;
+    
+}
+.slogan{
+    grid-column: 1/11;
+    grid-row: 1/2;
+    margin-bottom: -15px;
+}
+    p{
+        grid-column: 1/11;
+        grid-row: 2/3;
+    }
+
+    .loupe button{
+        display: none;
+    }
+
+    .saisieRecherche{
+        grid-column: 1/5;
+        grid-row: 3/4;
+        display: flex;
+        
+        
+               
+}
+        .iconRecherche{
+            font-size: 20px;
+            width: 25px;
+            padding-top: 7px;
+            padding-left: 10px;
+            background-color: #f2f2f2;
+            border-radius: 10px 0px 0px 10px;
+}     
+         input{
+           height: 30px;
+           width: 140px;
+           font-weight: bold;
+           
+}
+        
+        .boutonRecherche button{
+            height: 35px;
+            width: 100px;
+            font-size: 16px;
+            background-color: #0065fc;
+            color: white;
+            border: solid 1px gray;
+            border-radius: 0px 10px 10px 0px;
+}
+
+
+ .Filtre{
+     grid-column: 1/11;
+     grid-row: 4/5;
+     display: flex;
+     height: 100px;
+
+ }   
+    
+   .titreFiltres{
+       padding-top: 10px;
+   } 
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 40px;
+    
+    
+}
+.icon button{
+    height: 40px;
+    font-weight: bold;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.icon button:hover{
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+.icon button .fas{
+
+   margin-right: 5px;
+   margin-left: -25px;
+   margin-top: -3px;
+}
+.icon .fas{
+    font-size: 15px;
+    color: #0065fc;
+    background-color: #deebff;
+    padding: 13px;
+    border-radius: 50%;
+    
+    
+    
+}
+.texteInfo{
+    grid-column: 1/11;
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    
+}
+.texteInfo .fas{
+    font-size: 10px;
+    margin-right: 10px;
+    color: #0065fc;
+    border: 1px solid grey;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
+/* HEBERGEMENT A MARSEILLE */
+
+.Hebergement{
+    padding: 10px;
+    width: auto; 
+    height: auto;  
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr) 50px 1fr 1fr;
+    grid-template-rows: 50px repeat(4 , 1fr);
+    gap: 10px;
+}
+.titrePopulaires{
+    grid-column: 8/10;
+    grid-row: 1/2;
+    
+    
+}
+
+.hebergement-marseille{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.AubergeLaCannebiere{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.HotelDuPort{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.HotelLesMouettes{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.HotelDeLaMer{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.AubergeLePanier{
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.HotelChezAmina{
+    grid-column: 5/7;
+    grid-row: 3/4;
+}
+
+.HôtelLeSoleilDuMatin{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.AuCoeurDeLeau{
+    grid-column: 8/10;
+    grid-row: 3/4;
+}
+
+.HôtelToutBleu{
+    grid-column: 8/10;
+    grid-row: 4/5;
+}
+
+.afficherPlus{
+    grid-column: 1/2;
+    grid-row: 4/5 ;
+    display: flex;
+    align-items: center;
+}
+
+
+.titrePopulaires .fas{
+    padding-left: 120px;
+    
+}
+.image img{
+    
+    height: 250px;
+    width: 100%;
+}
+
+
+
+/* DETAILS IMAGES HEBERGEMENT */
+
+.details{
+    
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: -55px;
+    color: black;
+    
+    
+}
+.details .nom , .prix , .etoiles{
+    background-color: white;
+    padding-left: 5px;
+   
+    
+    
+}
+.details .nom{
+    font-weight: bold;
+}
+.image img{
+    border-radius: 10px;
+}
+.details .etoiles{
+    
+    color: #0065fc;
+    
+}
+.details .etoiles span{
+    color: #f2f2f2;
+
+}
+.image a{
+    text-decoration: none;
+    
+    
+}
+.image{
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+
+/* DETAILS LES PLUS POPULAIRES */
+.populaire{
+    width: 100%;
+    height: 207px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.populaire img{
+    width: 50%;
+    height: 200px;  
+    border-radius: 10px 0px 0px 10px;
+    border: 4px solid white; 
+    
+}
+
+.populaire .detailsPopulaire{
+    margin-top: -200px;
+    margin-left: 190px; 
+    color: black;   
+}
+
+.etoilesPopulaire{
+    padding-top: 100px;
+    color: #0065fc;
+}
+.detailsPopulaire span{
+    color: #f2f2f2;
+}
+
+.populaire a{
+    text-decoration: none;
+}
+.nomPopulaire{
+    font-weight: bold;
+}
+
+
+
+
+
+/* ACTIVITES A MARSEILLE */
+
+.marseille{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 50px 225px 225px; 
+    row-gap: 60px;
+    column-gap: 30px;
+    
+    
+
+
+   
+}
+.titreActivite{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.box1{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    
+}
+
+.box2{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+}
+.box3{
+    grid-column: 2/3 ;
+    grid-row: 3/4;
+}
+.box4{
+    grid-column: 3/4 ;
+    grid-row: 2/4;
+}
+.box5{
+    grid-column: 4/5 ;
+    grid-row: 2/3;
+}
+.box6{
+    grid-column: 4/5 ;
+    grid-row: 3/4;
+}
+.box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-size: cover;
+        
+}
+
+.noms{
+    background-color: #f2f2f2;
+    margin-top: -5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+    
+}
+
+/* FOOTER */
+
+.foot{
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 250px;
+    background-color: #f2f2f2;
+    
+    
+    
+}
+.foot p{
+    font-size: 12px;
+    
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1350px) {
+    .Hebergement{
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-rows:50px 1fr 50px 1fr 1fr 50px;
+    }
+    .titrePopulaires{
+        grid-column: 1/4;
+        grid-row: 1/2;
+            
+    }
+    
+    .hebergement-marseille{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .AubergeLaCannebiere{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+    .HotelDuPort{
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+    
+    .HotelLesMouettes{
+        grid-column: 5/7;
+        grid-row: 4/5;
+    }
+    
+    .HotelDeLaMer{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+    .AubergeLePanier{
+        grid-column: 3/5;
+        grid-row: 5/6;
+    }
+    
+    .HotelChezAmina{
+        grid-column: 5/7;
+        grid-row: 5/6;
+    }
+    
+    .HôtelLeSoleilDuMatin{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .AuCoeurDeLeau{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    
+    .HôtelToutBleu{
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    
+    .afficherPlus{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: flex;
+        align-items: center;
+    }
+
+    .populaire{
+        width: 100%;
+        height: 260px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .populaire img{
+        width: 98%;
+        height: 190px;  
+        border-radius: 10px 10px 0px 0px;
+        border: 4px solid white; 
+        
+    }
+    
+    .populaire .detailsPopulaire{
+        margin-top: 0px;
+        margin-left: 10px; 
+        color: black;   
+    }
+    .etoilesPopulaire{
+        padding-top: 0px;
+        
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .marseille{
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns:  45% 45% ;
+        grid-template-rows: 50px 150px 150px 150px;
+        
+    }
+    .box1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .box2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .box3{
+        grid-column: 1/2 ;
+        grid-row: 3/4;
+    }
+    .box4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .box5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .box6{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+        .Nav{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+        .inscription{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .soulignementHebergement{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+        
+}
+@media screen and (max-width:830px) {
+    .Hebergement{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+
+/* MEDIA QUERIES MAX-WIDTH : 750px */
+@media screen and (max-width:750px) {
+    .Filtre{
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+    }
+    .texteInfo{
+        grid-column: 1/11;
+        grid-row: 6/7;
+    }
+}
+
+/* MEDIA QUERIES MAX-WIDTH : 500px */
+@media screen and (max-width:500px){
+    .boutonRecherche {
+        display: none;
+    }
+
+    .loupe button{
+        display: block;
+        color: white;
+        background-color: #0065fc;
+        margin-left: -10px;
+        border-radius: 10px;
+        border: #0065fc;
+
+    }
+    .loupe button .fas{
+        font-size: 15px;
+        padding: 10px;
+        margin-right: 5px;
+    }
+    
+    .Recherche{
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(10 , 1fr);
+        grid-template-rows: repeat(15 , 50px);
+    }
+    .slogan{
+        grid-column: 2/10;
+        grid-row:1/2;
+            
+    }
+    p{
+        grid-column: 2/10;
+        grid-row: 2/3;
+    }
+    .saisieRecherche{
+        grid-column: 2/11;
+        grid-row: 3/4;
+    }
+    
+    .Filtre{
+        grid-column: 2/8;
+        
+        grid-row: 4/8;
+       
+        
+    }
+    .Filtre .icon{
+        
+        padding-left: 20px;
+        
+        
+    }
+    .iconRecherche{
+        height: 29px;
+    }
+    
+    .texteInfo{
+        grid-column: 2/10;
+        grid-row: 10/11;
+    }
+    
+
+
+
+
+    .foot{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f2f2f2;
+        
+    }
+    .marseille{
+        margin-bottom: 60px;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+        .box{
+            height: 150px;
+    }
+    header{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns:50% 50% ;
+        grid-template-rows: 80px 80px 2px;
+    }
+        .Reservia{
+            display: flex;
+            align-items: end;
+            
+            
+
+
+        }
+        .inscription{
+            grid-column: 2/3;
+            grid-row: 1/2 ;
+            display: flex;
+            justify-content:end;
+            align-items: end;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .Nav {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            font-size: 20px;
+            border-bottom: 3px solid #f2f2f2;
+            
+            
+        }
+        .Nav .hebergement{
+            border: none;
+            
+            
+        }
+        .Nav .activite a{
+            color: rgb(78, 76, 76);
+        }
+        .Nav .activite a:hover{
+            color: #0065fc;
+        }
+        .soulignementHebergement{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            border-top: 4px solid #0065fc;
+            
+        }
+        
+
+
+}
