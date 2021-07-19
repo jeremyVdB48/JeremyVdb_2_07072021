@@ -192,7 +192,7 @@ p{
     background-color: #f2f2f2;
     display: grid;
     grid-template-columns: repeat(6 , 1fr) 50px 1fr 1fr;
-    grid-template-rows: 50px repeat(4 , 1fr);
+    grid-template-rows: 50px repeat(3 , 1fr);
     gap: 10px;
 }
 .titrePopulaires{
@@ -362,8 +362,7 @@ p{
 
 .marseille{
 
-    margin-left: 10px;
-    margin-right: 10px;
+    
     width: 100%;
     height: 700px;
     display: grid;
@@ -564,35 +563,42 @@ p{
 
 @media screen and (max-width:900px) {
     .marseille{
+        padding: 0;
         margin-bottom: 40px;
         display: grid;
-        grid-template-columns:  45% 45% ;
+        grid-template-columns:10px 1fr 1fr 10px ;
         grid-template-rows: 50px 150px 150px 150px;
-        
+        justify-content: center;
     }
+    
+    
     .box1{
-        grid-column: 1/2;
+        grid-column: 2/3;
         grid-row: 2/3;
     }
     .box2{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 2/3;
     }
     .box3{
-        grid-column: 1/2 ;
+        grid-column: 2/3 ;
         grid-row: 3/4;
     }
     .box4{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 3/4;
     }
     .box5{
-        grid-column: 1/2;
+        grid-column: 2/3;
         grid-row: 4/5;
     }
     .box6{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 4/5;
+    }
+
+    .titreActivite{
+        grid-column: 2/3;
     }
     
         .Nav{
@@ -712,9 +718,13 @@ p{
         width: auto;
         display: flex;
         flex-direction: column;
+        
     }
         .box{
             height: 150px;
+            width: 90%;
+            margin: auto;
+            
     }
     header{
         width: auto;
