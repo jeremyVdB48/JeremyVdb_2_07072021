@@ -413,6 +413,11 @@ p{
     background-size: cover;
         
 }
+.box:hover{
+    transition: 1s;
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+}
 
 .noms{
     background-color: #f2f2f2;
