@@ -142,6 +142,7 @@ p{
     font-weight: bold;
     padding-right: 10px;
     background-color: white;
+    border: 2px solid rgb(170, 169, 169);
     border-radius: 0px 20px 20px 0px;
 }
 
@@ -683,6 +684,9 @@ p{
         align-items: center;
         background-color: #f2f2f2;
         
+    }
+    .propos{
+        align-items: center;
     }
     .marseille{
         margin-bottom: 60px;
