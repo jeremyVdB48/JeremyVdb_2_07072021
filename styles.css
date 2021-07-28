@@ -210,15 +210,6 @@ p{
     
     
 }
-.containerPopulaire{
-    display: grid;
-    grid-column: 2/3; 
-    row-gap: 20px;
-    background-color: #f2f2f2;
-    padding: 0px 30px 30px 30px;
-    border-radius: 0px 0px 10px 10px;
-    
-}
 
 
 .hebergement-marseille{
@@ -279,9 +270,7 @@ p{
 .details .nom , .prix , .etoiles{
     background-color: white;
     padding-left: 5px;
-    
-   
-    
+     
     
 }
 .details .nom{
@@ -310,48 +299,74 @@ p{
 }
 
 
-/* DETAILS LES PLUS POPULAIRES */
+/* DETAILS LES PLUS POPULAIRES */ 
+
+
+.containerPopulaire{
+   background-color: #f2f2f2;
+   padding: 0px 20px;
+   border-radius: 0px 0px 10px 10px;
+}
 .populaire{
+    margin-bottom: 20px;
     border: 4px solid white;
-    width: 100%;
-    background-color: white;
     border-radius: 10px;
-    
 }
-
-.populaire img{
-    width: 50%;
-    height: 173px;  
-    border-radius: 10px 0px 0px 10px; 
-    object-fit: cover;
-    
-}
-
-.populaire .detailsPopulaire{
-    margin-top: -160px;
-    text-align:start;
-    width: 40%;
-    padding-left: 55%;
-    color: black;   
-}
-
-.etoilesPopulaire{
-    font-size: 15px;
-    padding-top: 70px;
-    color: #0065fc;
-}
-.detailsPopulaire span{
-    color: #f2f2f2;
-}
-
 .populaire a{
+    width: 100%;
+    display: flex;   
+    height: 180px;
     text-decoration: none;
-}
-.nomPopulaire{
-    font-weight: bold;
-    padding-right: 20px;
+    background-color: white;
 }
 
+.Box{
+    width: 45%;
+
+}
+.Box img{
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 10px 0px 0px 10px;  
+}
+.populaire{
+    
+    display: flex;
+}
+.detailsPopulaire {
+    padding: 10px;
+    color: black;
+    width: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+      
+}
+.detailsPopulaire p{
+    padding-bottom: 70px;
+}
+
+.detailsPopulaire span{
+    font-weight: bold;
+}
+.detailsPopulaire p{
+    font-size: 17px;
+}
+ .etoilesPopulaire {
+     display: flex;
+     color: #0065fc;
+      
+ }
+ .etoilesPopulaire span{
+     color: #f2f2f2;
+ }
+
+
+
+
+   
+    
+    
 
 
 
@@ -461,18 +476,23 @@ p{
     }
     
    .titrePopulaires{
+       margin: 0px 20px;
        grid-column:1/2 ;
        grid-row: 1/2;
    }
    .containerPopulaire{
-       padding: 10px 30px;
+       margin: 0px 20px;
+       padding: 4px 30px;
        grid-column: 1/2;
        grid-row: 2/3;
-       column-gap: 20px;
+       column-gap: 10px;
        display: flex;
-       width: auto;
        
-   }
+       
+  }
+  .populaire{
+      width: 100%;
+  }
    .hebergement-marseille{
        grid-column: 1/2;
        grid-row: 3/4;
@@ -496,6 +516,9 @@ p{
 }
 .etoilesPopulaire{
     padding-top: 0;
+}
+.Box{
+    width: 100%;
 }
 }
 
@@ -579,16 +602,18 @@ p{
 
     
     .containerPopulaire{
-        height: 700px;
+        padding-bottom: 200px;
+        height: 600px;
         display: flex;
-        flex-direction: column;
-        border-radius: 0;
-        
-        
+        flex-direction: column; 
+        border-radius: 0;   
         
     }
-    
+    .Recherche{
+        margin-bottom: 50px;
+    }
     .containerHebergement{
+        
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -613,6 +638,7 @@ p{
     .hebergement-marseille{
         font-size: 20px;
     }
+   
 }
 
 /* MEDIA QUERIES MAX-WIDTH : 500px */
@@ -675,12 +701,26 @@ p{
         grid-column: 2/10;
         grid-row: 10/11;
     }
+    .Hebergement{
+        margin: 0;
+    }
+    .containerPopulaire{
+        margin: 0px ;
+        width: auto;
+        background-color: #f2f2f2;   
+        
+    }
+    .titrePopulaires{
+        margin: 0;
+    }
     
     .hebergement-marseille{
         padding-left: 15px;
         font-size: 18px;
     }
-
+.containerHebergement{
+    margin: 0px 40px;
+}
 
 
     .foot{
