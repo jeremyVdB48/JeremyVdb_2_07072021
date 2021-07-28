@@ -716,10 +716,18 @@ p{
     }
     .titrePopulaires{
         margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
     
     .hebergement-marseille{
-        padding-left: 15px;
+        padding: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
         font-size: 18px;
     }
 .containerHebergement{
