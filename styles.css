@@ -245,6 +245,7 @@ p{
 .image{
     height: 265px;
     box-sizing:border-box ;
+    width: 100%;
 }
 .image img{
     width: 100%;
@@ -314,7 +315,7 @@ p{
 }
 .populaire a{
     width: 100%;
-    height: 100%;
+    height: 220px;
     display: flex;   
     
     text-decoration: none;
@@ -702,14 +703,16 @@ p{
         margin: 0;
     }
     .containerPopulaire{
+        padding-bottom: 0;
         margin: 0px ;
         width: auto;
         background-color: #f2f2f2;   
         
     }
-    .detailsPopulaire{
-        display: flex;
-        justify-content: ;
+    .detailsPopulaire p{
+        padding:0;
+        
+        
     }
     .titrePopulaires{
         margin: 0;
@@ -722,6 +725,7 @@ p{
 .containerHebergement{
     margin: 0px 40px;
 }
+
 
 
     .foot{
