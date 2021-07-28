@@ -314,8 +314,9 @@ p{
 }
 .populaire a{
     width: 100%;
+    height: 100%;
     display: flex;   
-    height: 180px;
+    
     text-decoration: none;
     background-color: white;
 }
@@ -482,17 +483,19 @@ p{
    }
    .containerPopulaire{
        margin: 0px 20px;
-       padding: 4px 30px;
+       padding: 40px 30px;
        grid-column: 1/2;
        grid-row: 2/3;
        column-gap: 10px;
-       display: flex;
-       
+       display: flex;   
        
   }
-  .populaire{
+  .populaire a{
       width: 100%;
+      height: 100%;
   }
+
+  
    .hebergement-marseille{
        grid-column: 1/2;
        grid-row: 3/4;
@@ -507,16 +510,12 @@ p{
        background-color: white;
    }
    
-   .populaire img{ 
-        height: 97%;  
 
-}
+
 .image{
     box-shadow: 5px 5px 5px #f2f2f2;
 }
-.etoilesPopulaire{
-    padding-top: 0;
-}
+
 .Box{
     width: 100%;
 }
@@ -603,7 +602,7 @@ p{
     
     .containerPopulaire{
         padding-bottom: 200px;
-        height: 600px;
+        height: auto;
         display: flex;
         flex-direction: column; 
         border-radius: 0;   
@@ -627,11 +626,9 @@ p{
     .titrePopulaires .fas{
         padding-left: 20px;
     }
-    .image{
-        width: 95%;
-    }
+    
     .populaire{
-        height: 180px;
+        height: 200px;
         width: 100%;
         border: 3px solid white;
     }
@@ -642,7 +639,7 @@ p{
 }
 
 /* MEDIA QUERIES MAX-WIDTH : 500px */
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
     .boutonRecherche {
         display: none;
     }
@@ -709,6 +706,10 @@ p{
         width: auto;
         background-color: #f2f2f2;   
         
+    }
+    .detailsPopulaire{
+        display: flex;
+        justify-content: ;
     }
     .titrePopulaires{
         margin: 0;
