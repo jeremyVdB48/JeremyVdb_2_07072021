@@ -246,6 +246,7 @@ p{
     height: 265px;
     box-sizing:border-box ;
     width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(182, 181, 181);
 }
 .image img{
     width: 100%;
@@ -311,11 +312,12 @@ p{
 .populaire{
     margin-bottom: 20px;
     border: 4px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(182, 181, 181);
     border-radius: 10px;
 }
 .populaire a{
     width: 100%;
-    height: 220px;
+    height: 190px;
     display: flex;   
     
     text-decoration: none;
@@ -451,9 +453,9 @@ p{
 /* FOOTER */
 
 .foot{
-    margin: 0px 40px;
+    
     font-family: "Raleway","sans-serif";
-    padding-left: 10px;
+    padding-left: 40px;
     display: grid;
     grid-template-columns: 30% 30% 30% 10%; 
     background-color: #f2f2f2;
@@ -470,6 +472,7 @@ p{
 
 @media screen and (max-width:1250px) {
     .Hebergement{
+        margin: 0;
         display: grid; 
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 50px 2fr 50px;
@@ -514,7 +517,7 @@ p{
 
 
 .image{
-    box-shadow: 5px 5px 5px #f2f2f2;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
 }
 
 .Box{
@@ -535,7 +538,7 @@ p{
         padding: 0;
         margin-bottom: 40px;
         display: grid;
-        grid-template-columns:10px 1fr 1fr 10px ;
+        grid-template-columns:1px 1fr 1fr 1px ;
         grid-template-rows: 50px 150px 150px 150px;
         justify-content: center;
     }
@@ -588,7 +591,7 @@ p{
 
 
 /* MEDIA QUERIES MAX-WIDTH : 750px */
-@media screen and (max-width:750px) {
+@media screen and (max-width:765px) {
     .Filtre{
         display: flex;
         flex-wrap: wrap;
@@ -617,7 +620,7 @@ p{
         display: flex;
         flex-direction: column;
         background-color: white;
-        
+        margin: 40px;
     }
     
     .titrePopulaires{
@@ -639,7 +642,7 @@ p{
    
 }
 
-/* MEDIA QUERIES MAX-WIDTH : 500px */
+/* MEDIA QUERIES MAX-WIDTH : 550px */
 @media screen and (max-width:550px){
     .boutonRecherche {
         display: none;
@@ -674,10 +677,12 @@ p{
     p{
         grid-column: 2/10;
         grid-row: 2/3;
+        padding-top: 20px;
     }
     .saisieRecherche{
         grid-column: 2/11;
         grid-row: 3/4;
+        padding-top: 30px;
     }
     
     .Filtre{
@@ -734,7 +739,9 @@ p{
     margin: 0px 40px;
 }
 
-
+.Activite{
+    margin: 20px;
+}
 
     .foot{
         height: auto;
