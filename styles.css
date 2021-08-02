@@ -364,7 +364,11 @@ p{
  .etoilesPopulaire span{
      color: #f2f2f2;
  }
- 
+ .titrePopulaires{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    }
 
 
 /* ACTIVITES A MARSEILLE */
