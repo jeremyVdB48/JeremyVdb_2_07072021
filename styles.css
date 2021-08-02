@@ -50,6 +50,7 @@ header{
     .inscription{
         grid-column: 6/7;
         grid-row: 2/3;
+        margin-right: 20px;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -781,7 +782,7 @@ p{
             display: flex;
             justify-content:flex-end;
             align-items: flex-end;
-            padding-right: 10px;
+            margin-right: 20px;
             padding-bottom: 5px;
             font-size: 20px;
             font-weight: bold;
